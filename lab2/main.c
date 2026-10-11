@@ -1,3 +1,14 @@
+/*
+ * Лабораторная работа №2.
+ *
+ * Вариант 17: найти столбец с максимальнным
+ * количеством положительныых элементов
+ * и вывести на экран его номер и
+ * соответствующее количество.
+ *
+ * Автор: Утников Александр Евгеньевич ПИ-11БО
+ */
+
 #include <stdio.h>
 
 #define MAX_SIZE 20
@@ -36,8 +47,8 @@ int main(void) {
 
   // find the column with the maximum
   // number of positive elements
-  int col_max_pos_count = 0;
-  int max_pos_count = 0;
+  int col_max_pos_count;
+  int max_pos_count;
   find_max_pos(matrix, n, m, &col_max_pos_count, &max_pos_count);
 
   print_result(col_max_pos_count, max_pos_count);
