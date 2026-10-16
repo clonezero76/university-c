@@ -73,7 +73,7 @@ void transpose_matrix(int a[MAX_SIZE][MAX_SIZE], int n, int m) {
 
 void reverse_row_matrix(int a[MAX_SIZE][MAX_SIZE], int n, int m) {
     for (int i = 0; i < n; i++) {
-        for (int j = 0; j < m; j++) {
+        for (int j = 0; j < m / 2; j++) {
             int buffer = a[i][j];
             a[i][j] = a[i][m - 1 - j];
             a[i][m - 1 - j] = buffer;
